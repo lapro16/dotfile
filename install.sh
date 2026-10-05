@@ -6,7 +6,7 @@ repo_dir="$PWD"
 
 backup_dir="$(mktemp -d "$HOME/dotfiles-backup.XXXXXX")"
 
-for file in bash_aliases tmux.conf; do
+for file in bash_aliases tmux.conf bashrc profile gitconfig; do
     target="$HOME/.$file"
 
     if [[ -e "$target" || -L "$target" ]]; then
